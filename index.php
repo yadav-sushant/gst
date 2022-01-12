@@ -8,8 +8,7 @@
     $status = true; $code=200; $description = ''; $data = [];
     $header = apache_request_headers();
 
-    // echo json_encode($header); exit;
-    if($header['Authorization'] == 'Bearer 9921965797')
+    if(isset($header['Authorization']) && $header['Authorization'] == 'Bearer 9921965797')
     {
         $input = json_decode(file_get_contents("php://input"));
 
