@@ -29,7 +29,7 @@
                     $end = strpos($output,'GST number');
 
                     $output = substr($output, 0, $end);
-                    $output = str_replace(array("\n","\r\n","\r","                  "), '', $output);
+                    $output = str_replace(array("\n","\r\n","\r","                 "), '', $output);
 
                     // echo  $output.'<br><br>';
 
